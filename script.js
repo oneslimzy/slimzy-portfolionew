@@ -21,12 +21,12 @@ const videoProjects = [
     link: "#"
   },
   {
-  category: "Promo Video",       // used as the filter tag
-  title: "Zidi of Subandgain",
-  desc: "A promo video for Zidi AI Whatsapp Assistant.",
-  thumb: "",   // leave "" for a placeholder look
-  link: "https://vimeo.com/1209531331?fl=ip&fe=ec"  // where the card links to
-  }
+    category: "Promo video",
+    title: "Zidi of Subandgain",
+    desc: "High-energy promo edit built around pacing and sound design.",
+    thumb: "",
+    link: "#"
+  },
   {
     category: "Explainer",
     title: "Explainer Video — Add Title",
