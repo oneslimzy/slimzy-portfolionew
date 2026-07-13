@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Slimzy — Motion Designer, Video Editor & Brand Identity Designer</title>
+<meta name="description" content="Slimzy Concepts — motion design, video editing and brand identity for fintech, Web3 and SaaS founders. Launch videos, promos, explainers and premium visual identity.">
+<meta name="theme-color" content="#0a0a0c">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Slimzy · Motion Designer & Brand Identity Designer">
+<meta property="og:description" content="Motion-driven videos and premium brand identity for products that need to be noticed.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============ NOISE / GRAIN OVERLAY ============ -->
+<div class="grain" aria-hidden="true"></div>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a href="#top" class="logo">SLIMZY<span class="logo-dot">.</span></a>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#video" data-nav>Video</a>
+      <a href="#branding" data-nav>Branding</a>
+      <a href="#about" data-nav>About</a>
+      <a href="#services" data-nav>Services</a>
+      <a href="#process" data-nav>Process</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#contact" class="btn btn-accent btn-sm">Hire Me</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <!-- ============ HERO ============ -->
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow" data-reveal>Motion Designer &amp; Video Editor — based in Abuja, Nigeria</p>
+
+      <h1 class="hero-title" data-reveal>
+        <span class="line">Videos that make</span>
+        <span class="line">brands <em>impossible</em></span>
+        <span class="line">to scroll past.</span>
+      </h1>
+
+      <p class="hero-sub" data-reveal>
+        I cut launch films, promos and explainers with purposeful motion —
+        then build the brand identity that holds it all together.
+        Clean visuals, sharp pacing, premium finish.
+      </p>
+
+      <div class="hero-actions" data-reveal>
+        <a href="#video" class="btn btn-accent">Watch the Reel</a>
+        <a href="#contact" class="btn btn-outline">Start a Project</a>
+      </div>
+    </div>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Launch Videos</span><span>·</span><span>Promo Edits</span><span>·</span>
+        <span>Explainer Videos</span><span>·</span><span>Brand Identity</span><span>·</span>
+        <span>Motion Graphics</span><span>·</span><span>Social Edits</span><span>·</span>
+        <span>Launch Videos</span><span>·</span><span>Promo Edits</span><span>·</span>
+        <span>Explainer Videos</span><span>·</span><span>Brand Identity</span><span>·</span>
+        <span>Motion Graphics</span><span>·</span><span>Social Edits</span><span>·</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ VIDEO / MOTION WORK ============ -->
+  <section class="section video-section" id="video">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work — 01</p>
+        <h2 class="section-title">Motion &amp; Video Editing</h2>
+        <p class="section-desc">
+          Product launches, promos, explainers and social edits — built frame by frame
+          to hold attention and communicate fast.
+        </p>
+      </div>
+
+      <div class="filter-row" id="videoFilters">
+        <!-- filter buttons injected by script.js -->
+      </div>
+
+      <div class="reel-track-wrap">
+        <div class="reel-track" id="videoGrid">
+          <!-- video project cards injected by script.js -->
+        </div>
+      </div>
+
+      <div class="section-footer">
+        <a href="https://www.behance.net/" target="_blank" rel="noopener" class="text-link">View full archive on Behance →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ BRANDING WORK ============ -->
+  <section class="section branding-section" id="branding">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow eyebrow-gold">Selected Work — 02</p>
+        <h2 class="section-title">Brand &amp; Visual Identity</h2>
+        <p class="section-desc">
+          Logo systems, social kits and identity design for fintech, Web3 and SaaS brands
+          that need to look premium, credible and globally ready.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- Frame Wall: moving strip of brand frames, mirrors the reference site's Frame Wall -->
+    <div class="frame-wall" aria-hidden="false">
+      <p class="frame-wall-label container">Frame Wall — Identity, shaped tile by tile.</p>
+      <div class="frame-row" id="frameRowA"></div>
+      <div class="frame-row frame-row-reverse" id="frameRowB"></div>
+    </div>
+
+    <div class="container">
+      <div class="section-footer">
+        <a href="https://www.behance.net/" target="_blank" rel="noopener" class="text-link text-link-gold">View branding archive →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section about-section" id="about">
+    <div class="container about-inner">
+      <div class="about-copy">
+        <p class="eyebrow">About</p>
+        <h2 class="section-title">The work does the talking.</h2>
+        <p class="about-text">
+          I'm Slimzy — a graphic designer and motion editor running
+          <strong>Slimzy Concepts</strong> out of Abuja, Nigeria. For the past
+          few years I've helped tech, fintech and Web3 founders turn ideas into
+          visuals people actually stop for: launch videos, promos, explainers,
+          and the brand systems that hold them together.
+        </p>
+        <p class="about-text">
+          I keep things punchy and minimal — on screen and off it. No filler,
+          no fluff, just clean frames, sharp pacing and identity work built to
+          hold up next to any global brand.
+        </p>
+
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-num">30+</span>
+            <span class="stat-label">Projects delivered</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">2</span>
+            <span class="stat-label">Disciplines, one studio</span>
+          </div>
+          <div class="stat">
+            <span class="stat-num">Global</span>
+            <span class="stat-label">Clients, remote-first</span>
+          </div>
+        </div>
+
+        <div class="about-tools">
+          <p class="about-tools-label">Tools I work with</p>
+          <div class="tools-row">
+            <span>After Effects</span><span>Premiere Pro</span><span>CapCut</span>
+            <span>Photoshop</span><span>Illustrator</span><span>InDesign</span>
+            <span>Figma</span><span>CorelDRAW</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-visual" aria-hidden="true">
+        <div class="about-frame">
+          <div class="about-frame-tag">Slimzy Concepts</div>
+          <div class="about-frame-sub">Abuja, Nigeria</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SERVICES ============ -->
+  <section class="section services-section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Services</p>
+        <h2 class="section-title">Design and motion support for brands that need to be noticed.</h2>
+        <p class="section-desc">
+          From launches to identity systems, each service is built to communicate
+          clearly and keep attention.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <span class="service-num">01</span>
+          <h3>Product Launch Videos</h3>
+          <p>Launch films that build momentum and make products impossible to ignore.</p>
+          <ul class="service-tags">
+            <li>Concept &amp; direction</li>
+            <li>Kinetic typography</li>
+            <li>Sound design</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">02</span>
+          <h3>Promo &amp; Explainer Videos</h3>
+          <p>Clear, engaging edits that turn complex products into simple stories.</p>
+          <ul class="service-tags">
+            <li>Script support</li>
+            <li>Visual metaphors</li>
+            <li>Animated UI</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">03</span>
+          <h3>Motion Graphics</h3>
+          <p>Purposeful animation and graphics that support the message, not distract from it.</p>
+          <ul class="service-tags">
+            <li>Logo animation</li>
+            <li>Lower thirds</li>
+            <li>Data motion</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">04</span>
+          <h3>Social / Short-form Edits</h3>
+          <p>Scroll-stopping short-form edits optimized for reach and retention.</p>
+          <ul class="service-tags">
+            <li>Reels &amp; Shorts</li>
+            <li>Captions</li>
+            <li>Hook-first pacing</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">05</span>
+          <h3>Brand &amp; Visual Identity</h3>
+          <p>Logo systems and identity design built to look premium, credible and globally ready.</p>
+          <ul class="service-tags">
+            <li>Logo &amp; mark design</li>
+            <li>Color &amp; type systems</li>
+            <li>Brand guidelines</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <span class="service-num">06</span>
+          <h3>Social Media Design</h3>
+          <p>Content kits and templates that keep a brand consistent across every platform.</p>
+          <ul class="service-tags">
+            <li>Post &amp; story templates</li>
+            <li>Banner &amp; cover design</li>
+            <li>Content systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROCESS ============ -->
+  <section class="section process-section" id="process">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Process</p>
+        <h2 class="section-title">From brief to launch-ready asset.</h2>
+        <p class="section-desc">Five steps that keep the message, the brand and the deadline aligned.</p>
+      </div>
+
+      <div class="process-grid">
+        <button type="button" class="process-step">
+          <span class="process-num">01</span>
+          <h3>Discovery</h3>
+          <p>Understand the product, the audience and the goal before anything gets made.</p>
+        </button>
+        <button type="button" class="process-step">
+          <span class="process-num">02</span>
+          <h3>Direction</h3>
+          <p>Lock the style, references, pacing and message together with you.</p>
+        </button>
+        <button type="button" class="process-step">
+          <span class="process-num">03</span>
+          <h3>Design / Edit</h3>
+          <p>Build the visual story — motion, editing, sound design or brand system.</p>
+        </button>
+        <button type="button" class="process-step">
+          <span class="process-num">04</span>
+          <h3>Review</h3>
+          <p>Collect feedback and refine until every frame and asset is right.</p>
+        </button>
+        <button type="button" class="process-step">
+          <span class="process-num">05</span>
+          <h3>Delivery</h3>
+          <p>Export launch-ready files for web, social, broadcast or print.</p>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WHY WORK WITH ME ============ -->
+  <section class="section why-section">
+    <div class="container why-inner">
+      <div class="section-head no-center">
+        <p class="eyebrow">Why Slimzy Concepts</p>
+        <h2 class="section-title">What it looks like to work together.</h2>
+      </div>
+      <ul class="why-list">
+        <li><button type="button" class="why-chip">Clean visual taste, zero filler</button></li>
+        <li><button type="button" class="why-chip">Purposeful motion, not decoration</button></li>
+        <li><button type="button" class="why-chip">Brand-first, product-first thinking</button></li>
+        <li><button type="button" class="why-chip">Fast, clear communication</button></li>
+        <li><button type="button" class="why-chip">Deadlines respected, always</button></li>
+        <li><button type="button" class="why-chip">Launch-ready delivery, every time</button></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT / HIRE ME ============ -->
+  <section class="section contact-section" id="contact">
+    <div class="container">
+      <div class="section-head">
+        <p class="eyebrow">Hire Me</p>
+        <h2 class="section-title">Let's turn your product into something people remember.</h2>
+        <p class="section-desc">Tell me about the project — I'll reply within 24–48 hours.</p>
+      </div>
+
+      <div class="contact-grid">
+        <form class="contact-form" id="contactForm">
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your name" required>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="projectType">Project type</label>
+              <select id="projectType" name="projectType" required>
+                <option value="" disabled selected>Select a type</option>
+                <option>Product Launch Video</option>
+                <option>Promo / Explainer Video</option>
+                <option>Social / Short-form Edit</option>
+                <option>Brand &amp; Visual Identity</option>
+                <option>Something else</option>
+              </select>
+            </div>
+            <div class="form-field">
+              <label for="budget">Budget range</label>
+              <select id="budget" name="budget" required>
+                <option value="" disabled selected>Select a budget</option>
+                <option>Under $500</option>
+                <option>$500 – $1,500</option>
+                <option>$1,500 – $5,000</option>
+                <option>$5,000+</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="message">Project details</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about the product, timeline and what you need..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-accent btn-block">Send Message</button>
+          <p class="form-note" id="formNote">This opens your email app with the details filled in.</p>
+        </form>
+
+        <div class="contact-side">
+          <a href="mailto:slimzyconcept@gmail.com" class="contact-item">
+            <span class="contact-label">Email</span>
+            <span class="contact-value">slimzyconcept@gmail.com</span>
+          </a>
+          <a href="https://x.com/slimzycpt" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-label">X / Twitter</span>
+            <span class="contact-value">@slimzycpt</span>
+          </a>
+          <a href="https://www.instagram.com/slimzy.cpt" target="_blank" rel="noopener" class="contact-item">
+            <span class="contact-label">Instagram</span>
+            <span class="contact-value">@slimzy.cpt</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="logo">SLIMZY<span class="logo-dot">.</span></a>
+    <p class="footer-tagline">Motion &amp; brand design for products that need to be noticed.</p>
+
+    <div class="footer-links">
+      <a href="mailto:slimzyconcept@gmail.com">Email</a>
+      <a href="https://x.com/slimzycpt" target="_blank" rel="noopener">X / Twitter</a>
+      <a href="https://www.instagram.com/slimzy.cpt" target="_blank" rel="noopener">Instagram</a>
+    </div>
+
+    <p class="footer-copy">© <span id="year"></span> Slimzy Concepts. All rights reserved.</p>
+  </div>
+</footer>
+
+<a href="#contact" class="float-cta" id="floatCta">Hire Me</a>
+
+<script src="script.js"></script>
+</body>
+</html>
