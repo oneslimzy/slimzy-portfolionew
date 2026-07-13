@@ -18,35 +18,35 @@ const videoProjects = [
     title: "Product Launch — Add Title",
     desc: "Short one-line description of the video and what it delivers.",
     thumb: "",
-    link: "#"
+    video: "#"
   },
   {
     category: "Promo video",
     title: "Zidi of Subandgain",
     desc: "Promo Video for Zidi AI whatsapp assitant.",
     thumb: "",
-    link: "https://vimeo.com/1209531331?fl=ip&fe=ec"
+    video:"https://player.vimeo.com/video/1209531331"
   },
   {
     category: "Explainer",
     title: "Explainer Video — Add Title",
     desc: "Turns a complex idea into a clear, simple visual story.",
     thumb: "",
-    link: "#"
+    video: "#"
   },
   {
     category: "Motion Graphics",
     title: "Motion Graphics — Add Title",
     desc: "Purposeful animation and graphics supporting the message.",
     thumb: "",
-    link: "#"
+    video: "#"
   },
   {
     category: "Social Edit",
     title: "Social / Short-form — Add Title",
     desc: "Scroll-stopping short-form edit optimized for reach.",
     thumb: "",
-    link: "#"
+    video: "#"
   }
 ];
 
@@ -97,7 +97,8 @@ function sprocket(){
 
 function renderVideoCards(list){
   videoGrid.innerHTML = list.map(p => `
-    <a class="video-card" href="${p.link}" target="_blank" rel="noopener">
+    <div class="video-card"
+data-video="${p.video}">
       <div class="video-thumb" style="${p.thumb ? `background-image:url('${p.thumb}');background-size:cover;background-position:center;` : ''}">
         ${sprocket()}
         <div class="play-btn">${playIcon()}</div>
@@ -107,9 +108,11 @@ function renderVideoCards(list){
         <h3>${p.title}</h3>
         <p>${p.desc}</p>
       </div>
-    </a>
+    </div>
   `).join('');
 }
+
+
 
 function frameTile(p){
   return `
@@ -210,3 +213,52 @@ contactForm.addEventListener('submit', (e) => {
 
 /* ---------- FOOTER YEAR ---------- */
 document.getElementById('year').textContent = new Date().getFullYear();
+const modal=document.getElementById("videoModal");
+
+const frame=document.getElementById("videoFrame");
+
+const close=document.getElementById("closeVideo");
+
+document.addEventListener("click",(e)=>{
+
+const card=e.target.closest(".video-card");
+
+if(!card)return;
+
+frame.src=card.dataset.video+"?autoplay=1";
+
+modal.style.display="flex";
+
+});
+
+close.onclick=()=>{
+
+modal.style.display="none";
+
+frame.src="";
+
+}
+
+modal.onclick=(e)=>{
+
+if(e.target===modal){
+
+modal.style.display="none";
+
+frame.src="";
+
+}
+
+}
+
+document.addEventListener("keydown",(e)=>{
+
+if(e.key==="Escape"){
+
+modal.style.display="none";
+
+frame.src="";
+
+}
+
+});
