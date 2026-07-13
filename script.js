@@ -23,9 +23,9 @@ const videoProjects = [
   {
     category: "Promo video",
     title: "Zidi of Subandgain",
-    desc: "High-energy promo edit built around pacing and sound design.",
+    desc: "Promo Video for Zidi AI whatsapp assitant.",
     thumb: "",
-    link: "#"
+    link: "https://vimeo.com/1209531331?fl=ip&fe=ec"
   },
   {
     category: "Explainer",
